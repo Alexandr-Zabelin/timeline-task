@@ -2,19 +2,19 @@ import { FC, useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 
 import { Text } from './styled';
-import { DURATION } from './constants';
 import { NumberWithTransitionProps } from './types';
 
 export const NumberWithTransition: FC<NumberWithTransitionProps> = ({
   value,
   color,
+  duration,
 }) => {
   const [number, setNumber] = useState(value);
   const counterRef = useRef({ totalValue: value });
 
   useEffect(() => {
     gsap.to(counterRef.current, {
-      duration: DURATION,
+      duration,
       totalValue: value,
       roundProps: 'totalValue',
       onUpdate: () => setNumber(counterRef.current.totalValue),

@@ -1,6 +1,5 @@
 import { PeriodData } from '@components/TimelineSection/types';
 
-export interface SliderSectionProps {
+export interface SwitchableSectionProps {
   data: PeriodData;
-  className?: string;
 }

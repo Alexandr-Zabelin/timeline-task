@@ -1,7 +1,7 @@
-import { ANIMATIONS as CIRCLE_ANIMATIONS } from '../PeriodPoints';
+import { ANIMATIONS as CORE_ANIMATIONS } from '../../constants';
 
 // 20% времени ничего не показываем, 40% и 40% проводим transition в каждую из сторон
-const durationRatio = CIRCLE_ANIMATIONS.circleRotation.duration / 5;
+const durationRatio = CORE_ANIMATIONS.number.duration / 5;
 const delay = durationRatio;
 const duration = durationRatio * 2;
 
@@ -15,5 +15,5 @@ export const ANIMATIONS = {
   },
 };
 
-export const MAX_WIDTH = 320;
-export const SLIDES_GAP = 80;
+export const MAX_WIDTH = 180;
+export const SLIDES_GAP = 25;

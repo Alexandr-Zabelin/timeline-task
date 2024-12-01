@@ -10,7 +10,7 @@ export const MOBILE_TYPOGRAPHY: Record<string, StyledObject> = {
   h2Bold: {
     fontWeight: 700,
     fontSize: 20,
-    lineHeight: 24,
+    lineHeight: '24px',
   },
   body1Regular: {
     fontWeight: 400,
@@ -19,6 +19,11 @@ export const MOBILE_TYPOGRAPHY: Record<string, StyledObject> = {
   },
   body2Regular: {
     fontWeight: 400,
+    fontSize: 14,
+    lineHeight: '20px',
+  },
+  body2Bold: {
+    fontWeight: 700,
     fontSize: 14,
     lineHeight: '20px',
   },

@@ -3,10 +3,9 @@ import { ThemeProvider } from 'styled-components';
 
 import { getTheme } from '@theme';
 import { useScreenWidth } from '@hooks/useScreenWidth';
-import { TimelineSection } from '@components/TimelineSection';
 
 import { AppContextProvider, AppContextData } from './context';
-import { AppWrapper, GlobalStyles } from './styled';
+import { AppWrapper, GlobalStyles, TimelineSection } from './styled';
 import { timelineSectionMockData } from './mocks';
 
 export const App: FC = () => {
@@ -22,8 +21,9 @@ export const App: FC = () => {
     <ThemeProvider theme={theme}>
       <AppContextProvider value={appContextValue}>
         <GlobalStyles />
-        <AppWrapper>
+        <AppWrapper $isMobile={isMobile}>
           {/* для примера использовал моковые данные */}
+          <TimelineSection data={timelineSectionMockData} isMobile={isMobile} />
           <TimelineSection data={timelineSectionMockData} isMobile={isMobile} />
         </AppWrapper>
       </AppContextProvider>

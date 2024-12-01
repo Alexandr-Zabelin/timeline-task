@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from 'react';
+
 interface EdgesData {
   start: number;
   end: number;
@@ -37,9 +39,13 @@ export interface TimelineSectionData {
 }
 
 export interface BaseTimelineSectionProps {
+  setCurrentPeriodIdx: Dispatch<SetStateAction<number>>;
+  currentPeriodIdx: number;
   data: TimelineSectionData;
 }
 
-export interface TimelineSectionProps extends BaseTimelineSectionProps {
+export interface TimelineSectionProps
+  extends Pick<BaseTimelineSectionProps, 'data'> {
   isMobile: boolean;
+  className?: string;
 }

@@ -1,8 +1,8 @@
 import { FC } from 'react';
 
 import { NextPrevButton } from '@components/NextPrevButton';
+import { PeriodSwitcherProps } from '@components/TimelineSection/shared';
 
-import { PeriodSwitcherProps } from './types';
 import { ButtonsWrapper, Text } from './styled';
 import { NEXT_BTN_CONFIG, PREV_BTN_CONFIG } from './constants';
 
