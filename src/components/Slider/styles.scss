@@ -1,0 +1,5 @@
+// без этого slidesPerView="auto" не работает(
+// https://stackoverflow.com/questions/70821850/swiper-slidesperview-auto-wont-work-for-me
+.swiper-slide {
+  width: auto;
+}

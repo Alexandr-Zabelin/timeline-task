@@ -1,0 +1,1 @@
+export { getCoordsOfPointOnCircle } from './getCoordsOfPointOnCircle';

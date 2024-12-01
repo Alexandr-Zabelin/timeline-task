@@ -1,0 +1,1 @@
+export { getButtonConfig } from './getButtonConfig';
