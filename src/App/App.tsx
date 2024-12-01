@@ -24,6 +24,7 @@ export const App: FC = () => {
         <AppWrapper $isMobile={isMobile}>
           {/* для примера использовал моковые данные */}
           <TimelineSection data={timelineSectionMockData} isMobile={isMobile} />
+          {/* для проверки работы сразу нескольких экземпляров компонента на странице */}
           <TimelineSection data={timelineSectionMockData} isMobile={isMobile} />
         </AppWrapper>
       </AppContextProvider>
